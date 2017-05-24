@@ -1,0 +1,93 @@
+@import "setings";
+
+      //SM>XS
+@media all and (max-width : 768px) {
+
+
+  html{
+   // font-size: 15px;
+  }
+
+
+
+}
+
+@media all and (max-width : 640px) {
+  .main-slider{
+    height: auto;
+    .additional-layer{
+      padding: 0 10px;
+      span{
+        font-size: 20px;
+      }
+    }
+    .swiper-slide img{
+      position: static;
+      @include transform(translateY(0));
+    }
+  }
+  .logo{
+//    height: 70px;
+//    padding: 15px 0 20px;
+  }
+  .lang-row{
+    .lang a{
+      width: 40px;
+      line-height: 40px;
+    }
+    .social a{
+      font-size: 20px;
+      padding: 6px 0 0 20px;
+    }
+  }
+  .brands-display{
+    padding: 0 40px;
+    width: 100%;
+    display: block;
+    &>div{
+      display: block;
+      &>div{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e4e4e4;
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4;
+        padding: 75px 0;
+        text-align: center;
+        position: relative;
+        &:first-child{
+          border-top: 1px solid #e4e4e4;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width : 540px) {
+  .s-type-b .section-heading:before{
+    width: 50px;
+  }
+}
+
+@media all and (max-width : 480px) {
+
+}
+@media all and (max-width : 768px) {
+
+}
+@media all and (max-width : 600px) {
+
+}
+
+@media all and (max-width : 768px) {
+
+}
+@media all and (max-width : 640px) {
+
+}
+@media all and (max-width : 580px) {
+
+}
+@media all and (max-width : 460px) {
+
+}

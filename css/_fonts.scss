@@ -1,0 +1,243 @@
+/* Webfont: Lato-Regular */
+@font-face {
+  font-family: 'LatoWeb';
+  src: url("../fonts/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Lato-Light */
+@font-face {
+  font-family: 'LatoWebLight';
+  src: url("../fonts/Lato-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Lato-Medium */
+@font-face {
+  font-family: 'LatoWebMedium';
+  src: url("../fonts/Lato-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff"), url("../fonts/Lato-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Webfont: Lato-Semibold */
+@font-face {
+  font-family: 'LatoWebSemibold';
+  src: url("../fonts/Lato-Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+//
+//@font-face {
+//  font-family: 'Lato';
+//  src: url('../fonts/LATO-REGULAR.TTF')  format('truetype');
+//  font-weight: 400;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Lato';
+//  src: url('../fonts/LATO-ITALIC.TTF')  format('truetype');
+//  font-weight: 400;
+//  font-style: italic;
+//}
+//
+//@font-face {
+//  font-family: 'LatoWebLight';
+//  src: url('../fonts/LATO-LIGHT.TTF')  format('truetype');
+//  font-weight: 300;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'LatoWebLight';
+//  src: url('../fonts/LATO-LIGHTITALIC.TTF')  format('truetype');
+//  font-weight: 300;
+//  font-style: italic;
+//}
+//
+//@font-face {
+//  font-family: 'Lato';
+//  src: url('../fonts/LATO-BOLD.TTF')  format('truetype');
+//  font-weight: 600;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Lato';
+//  src: url('../fonts/LATO-BOLDITALIC.TTF')  format('truetype');
+//  font-weight: 600;
+//  font-style: italic;
+//}
+
+
+@import "setings";
+
+@mixin font-face($fontUrl, $fontName) {
+  @font-face {
+    font-family: "#{$fontName}";
+    src: url("#{$fontUrl}#{$fontName}.eot");
+    src: url("#{$fontUrl}#{$fontName}.eot?#iefix") format("embedded-opentype"),
+    url("#{$fontUrl}#{$fontName}.woff") format("woff"),
+    url("#{$fontUrl}#{$fontName}.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font-face("../fonts/g-icon/", "g-icon");
+
+.g-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'g-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.g-icon_1:before {content: "\e900";}
+.g-icon_2:before {content: "\e901";}
+.g-icon_3:before {content: "\e902";}
+.g-icon_4:before {content: "\e903";}
+.g-icon_5:before {content: "\e904";}
+.g-icon_6:before {content: "\e905";}
+.g-icon_7:before {content: "\e906";}
+.g-icon_8:before {content: "\e907";}
+.g-icon_9:before {content: "\e908";}
+.g-icon_10:before {content: "\e909";}
+.g-icon_11:before {content: "\e90a";}
+.g-icon_12:before {content: "\e90b";}
+.g-icon_13:before {content: "\e90c";}
+.g-icon_14:before {content: "\e90d";}
+.g-icon_15:before {content: "\e90e";}
+.g-icon_16:before {content: "\e90f";}
+.g-icon_17:before {content: "\e910";}
+.g-icon_18:before {content: "\e911";}
+.g-icon_19:before {content: "\e912";}
+.g-icon_20:before {content: "\e913";}
+.g-icon_21:before {content: "\e914";}
+.g-icon_22:before {content: "\e915";}
+.g-icon_23:before {content: "\e916";}
+.g-icon_24:before {content: "\e917";}
+.g-icon_25:before {content: "\e918";}
+.g-icon_26:before {content: "\e919";}
+.g-icon_27:before {content: "\e91a";}
+.g-icon_28:before {content: "\e91b";}
+.g-icon_29:before {content: "\e91c";}
+
+/* === Base Font scheme === */
+.fontA {
+  font-size: 1.091rem;
+  font-family: 'LatoWebLight';
+  line-height: 1.7; }
+
+.fontAA {
+  font-size: 0.4848rem;
+  line-height: 1.5625; }
+
+.fontAB {
+  font-size: 0.6061rem;
+  line-height: 1.5625; }
+.fontAC {
+  font-size: 0.7879rem;
+  line-height: 1.2; }
+
+.fontAN {
+  font-size: 1.394rem;
+  line-height: 1.2; }
+
+.fontB {
+  font-size: 0.8485rem;
+  line-height: 1.2; }
+
+.fontC {
+  font-size: 0.9394rem;
+  font-family: 'LatoWebLight';
+  line-height: 1.2; }
+
+.fontCE {
+  font-size: 1.121rem;
+  font-family: 'LatoWebLight';
+  line-height: 1.2; }
+
+.fontD {
+  font-size: 1.424rem;
+  line-height: 1.2; }
+
+.fontE {
+  font-size: 1.091rem;
+  line-height: 1.2; }
+.fontTE {
+  font-size: 1.303rem;
+  line-height: 1.2; }
+.fontFE {
+  font-size: 0.9091rem;
+  line-height: 1.2; }
+
+.fontF {
+  font-size: 0.9697rem;
+  line-height: 1.2; }
+
+.fontG {
+  font-size: 1.515rem;
+  line-height: 1.2; }
+
+.fontH {
+  font-size: 1.758rem;
+  line-height: 1.2; }
+
+/*@media only screen and (max-width: 768px) {
+  .fontA {
+    font-size: 16px;
+    line-height: 1.875; }
+
+  .fontAA {
+    font-size: 16px;
+    line-height: 1.5625; }
+
+  .fontAB {
+    font-size: 20px;
+    line-height: 1.5625; }
+
+  .fontB {
+    font-size: 28px;
+    line-height: 1.2; }
+
+  .fontC {
+    font-size: 31px;
+    line-height: 1.2; }
+
+  .fontD {
+    font-size: 26px;
+    line-height: 1.2; }
+
+  .fontE {
+    font-size: 36px;
+    line-height: 1.2; }
+  .fontTE {
+    font-size: 43px;
+    line-height: 1.2; }
+  .fontFE {
+    font-size: 30px;
+    line-height: 1.2; }
+
+  .fontF {
+    font-size: 32px;
+    line-height: 1.2; } }*/

@@ -1,0 +1,113 @@
+.about {
+  .title {
+    text-align: center; }
+  .address {
+    margin-top: 2.25rem;
+    font-family: "LatoWeb";
+    .img-outer {
+      display: inline-block;
+      width: 26px; }
+    address {
+      display: inline-block; }
+  }
+  .row {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  &:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  }
+  .col {
+    width: 50%;
+    float: left;
+  &:first-of-type {
+    padding-right: 5.71429%; }
+  &:last-of-type {
+    padding-left: 5.71429%; }
+  }
+  ul {
+    margin-top: 6px; }
+  li {
+    float: left;
+    width: 50%;
+    margin-top: 2rem; }
+  img {
+    display: block;
+    max-width: 100%; }
+}
+.arguments {
+  position: relative;
+  padding: 1rem 0;
+  background: transparent url("../img/about-bg.jpg") center no-repeat;
+  background-size: cover;
+  .bg-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 0; }
+  .wrap {
+    position: relative;
+    z-index: 1; }
+  .title {
+    text-align: left;
+    a {
+      color: #c70923; }
+  }
+  li {
+    position: relative;
+    min-height: 4.6875em; }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .col > ul > li > p {
+    padding-left: 11%;
+    padding-right: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%); }
+}
+.banner {
+  text-align: center;
+  img {
+    max-width: 100%;
+    display: inline-block; }
+}
+
+.section-content {
+  padding-bottom: 1.75rem; }
+.service {
+  .section-content .col:last-child{
+    width: 93%;
+    margin: 1rem auto;
+  }
+  .section-cars {
+    width: 93%;
+    margin: 0 auto 1rem;
+    .cars-list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.text {
+  font-family: "LatoWebLight";
+  p {
+    /*margin-top: 2.25rem; */
+  }
+}
+.img-outer img {
+  display: block;
+  max-width: 100%; }

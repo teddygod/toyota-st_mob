@@ -1,0 +1,39 @@
+.header-bottom {
+    max-width: 100%;
+    padding: 81px 20px;
+    border-bottom: 7px solid #c70923;
+    height: 170px;}
+.header-block_1 {
+    display: inline-block;}
+.header-block:last-child {
+    float: right;
+    padding-top: 24px;}
+.header-block_1:last-child {
+    float: right;
+    padding-top: 10px;}
+.mob-burger {
+    height: 24px;
+    width: 42px;
+    position: relative;
+    color: #c70923;}
+.mob-burger .stick, .mob-burger:before, .mob-burger:after {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background: #c70923;
+    position: absolute;
+    content: '';
+    left: 0;
+    border-radius: 3px;}
+.mob-burger:before {
+    top: 0;}
+.mob-burger .stick {
+    top: 50%;
+    transform: translateY(-50%);}
+.mob-burger:after {
+    bottom: 0;}
+
+.content {
+    display: block;
+}
+

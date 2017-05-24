@@ -1,0 +1,48 @@
+//mixin-start
+@import "colors";
+
+@mixin font-size($px: 33, $rem: 1/33) {
+  font-size: $px*$rem+rem;
+}
+
+@mixin box-shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+@mixin color-this-link($default, $hovered) {
+  color: $default;
+  &:hover {
+    color: $hovered;
+  }
+}
+@mixin transform-origin($place){
+  -webkit-transform-origin: $place;
+  -moz-transform-origin: $place;
+  transform-origin: $place;
+}
+@mixin transform($transformation) {
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  transform: $transformation;
+}
+@mixin background-size($size){
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  background-size: $size;
+}
+
+//mixin-end
+//-------------------------------------------
+
+

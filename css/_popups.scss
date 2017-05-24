@@ -1,0 +1,156 @@
+
+.body-locked {
+  overflow: hidden; }
+
+.popup {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 51;
+  display: none;
+  &-inner {
+    position: relative;
+    max-width: 600px;
+    margin: 15vh auto;
+    padding: 65px 70px;
+    background-color: #fff;
+    text-align: center;
+  &.double-width {
+    max-width: 1000px;
+    .input-outer {
+      width: 48%;
+      float: left;
+    &:nth-of-type(even) {
+      margin-left: 4%; }
+    }
+  }
+  }
+  &.is-shown {
+    display: block; }
+  .text {
+    text-align: center;
+    font-family: "LatoWebLight"; }
+  h2.title + .text {
+    text-align: left; }
+  .select-container {
+    text-align: left; }
+  input, & textarea {
+    font-family: "LatoWebLight"; }
+  input:input::-webkit-input-placeholder, & textarea:input::-webkit-input-placeholder {
+    font-family: "LatoWebLight"; }
+  input:input:-moz-input-placeholder, & textarea:input:-moz-input-placeholder {
+    font-family: "LatoWebLight"; }
+  input:input::-moz-input-placeholder, & textarea:input::-moz-input-placeholder {
+    font-family: "LatoWebLight"; }
+  input:input::-ms-input-placeholder, & textarea:input::-ms-input-placeholder {
+    font-family: "LatoWebLight"; }
+  input:focus, & textarea:focus {
+    outline: none; }
+  .input-outer input.error {
+    border: 1px solid #c70923; }
+  textarea {
+    min-height: 170px; }
+  img {
+    margin-top: 1rem; }
+  .upload-file {
+    padding-top: 2.5rem;
+    text-align: left;
+    input[type="file"] {
+      display: none; }
+    label {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 30px;
+      background-color: #c70923;
+      vertical-align: middle;
+      border: 1px solid #c70923;
+      transition: background-color .2s;
+      .upload-img {
+        width: 30px;
+        display: block;
+        margin: 5px auto; }
+      &:hover {
+        background-color: #fff; }
+      &:hover .upload-img path {
+        fill: #c70923; }
+    }
+    p {
+      display: inline-block;
+      line-height: 40px;
+      vertical-align: middle; }
+    .file-info {
+      padding-left: 70px;
+      p {
+        line-height: 1.2em; }
+      .name {
+        display: inline-block; }
+      .remove {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle; }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #c70923; }
+    }
+  }
+  .outer-centered {
+    clear: both;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    .input-outer {
+      width: 100%;
+      float: none;
+      margin-left: 0 !important; }
+    .small {
+      font-size: 12px;
+      line-height: 20px;
+      text-align: left; }
+  }
+  .forgot, & .btn-reg {
+    display: inline-block;
+    width: 100%;
+    font-family: "LatoWeb";
+    color: #fff; }
+  .btn-login {
+    padding: .5rem 4rem;
+    color: #fff;
+    background-color: #fff; }
+  .forgot, & .btn-reg, & .btn-login {
+    margin-bottom: 1.5rem;
+    cursor: pointer; }
+  .btn-link {
+    cursor: pointer; }
+  .close, & .remove {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    transition: background-color .3s;
+    z-index: 1;
+    cursor: pointer; }
+  .close:before, & .close:after, & .remove:before, & .remove:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 2px;
+    height: 25px;
+    background-color: #c70923; }
+  .close:before, & .remove:before {
+    transform: translate(-50%, -50%) rotate(45deg); }
+  .close:after, & .remove:after {
+    transform: translate(-50%, -50%) rotate(-45deg); }
+}

@@ -1,0 +1,43 @@
+img{
+  width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+input:focus{
+  outline: none;
+}
+.no-padding{
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.typical-horizontal-list{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  &>li{
+    display: inline-block;
+  }
+}
+.typical-vertical-list{
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  &>li{
+    display: block;
+    margin: 0;
+  }
+}
+.additional-layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,136 @@
+.contacts {
+  .row {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  &:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  }
+  .col {
+    width: 45.71429%;
+    float: left;
+  &:last-of-type {
+    margin-left: 8.57143%; }
+  }
+  .sub-title {
+    position: relative;
+    font-family: "LatoWebLight";
+    text-transform: uppercase;
+    img {
+      width: 28px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
+    p {
+      padding-left: 40px; }
+  }
+  .sub-col {
+    float: left;
+    width: 50%;
+    padding-top: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    &:last-of-type {
+      width: 100%; }
+  }
+  .text p, & .text address {
+    margin-top: 2.25rem;
+    font-family: "LatoWebLight"; }
+  .input-outer {
+    width: 48.4375%;
+    float: left;
+    margin-top: 2.85714%;
+    &:nth-of-type(even) {
+      margin-left: 2.85714%; }
+    &:last-of-type {
+      width: 100%;
+      float: left; }
+    input, & textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: .5em 1.25em; }
+    input::-webkit-input-placeholder, & textarea::-webkit-input-placeholder {
+      font-family: "LatoWebLight";
+      color: #000; }
+    input:-moz-placeholder, &r textarea:-moz-placeholder {
+      /* Firefox 18- */
+      font-family: "LatoWebLight";
+      color: #000; }
+    input::-moz-placeholder, & textarea::-moz-placeholder {
+      /* Firefox 19+ */
+      font-family: "LatoWebLight";
+      color: #000; }
+    input:-ms-input-placeholder, & textarea:-ms-input-placeholder {
+      font-family: "LatoWebLight";
+      color: #000; }
+    textarea {
+      min-height: 7.5em; }
+  }
+  select {
+    display: none; }
+  .select-container {
+    position: relative;
+    border: 1px solid #989898;
+    ul {
+      position: absolute;
+      left: -1px;
+      top: calc(100% + 4px);
+      width: calc(100% + 2px);
+      background-color: #fff;
+      border: 1px solid #989898;
+      z-index: 1;
+      display: none; }
+    span {
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      cursor: pointer; }
+    li:hover {
+      color: #c70923; }
+    span, & li {
+      padding: .5em 1.25em;
+      font-family: "LatoWebLight";
+      cursor: default; }
+    .curr-opt {
+      color: #c70923; }
+    .fa {
+      position: absolute;
+      top: 15px;
+      right: 1rem;
+      color: #989898;
+      cursor: pointer;
+      transition: transform .3s;
+      @media only screen and (max-width: 1100px) {
+
+         }
+      &.rotated {
+        transform: rotate(180deg); }
+    }
+  }
+  button {
+    width: 75%;
+    float: left;
+    padding-top: 3.125%;
+    padding-bottom: 3.125%;
+    font-family: "LatoWeb";
+    border: none;
+    border: 1px solid #c70923;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  &:hover {
+    color: #c70923;
+    background-color: #fff; }
+  }
+}
+.map {
+  min-height: 440px; }

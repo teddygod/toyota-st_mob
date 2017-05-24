@@ -1,0 +1,12 @@
+{
+	"name": "\u0422\u041e\u0419\u041e\u0422\u0410 \u041d\u0410 \u0421\u0422\u041e\u041b\u0418\u0427\u041d\u041e\u041c\u0423",
+	"icons": [
+		{
+			"src": "http:\/\/toyota-st.com\/fav-icon\/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"display": "standalone"
+}

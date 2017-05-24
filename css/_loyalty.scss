@@ -1,0 +1,95 @@
+.loyalty {
+  .section-content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+    width: 93%;
+  }
+  .specifications {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    .drop-header {
+      background-color: #eee;
+      &:after {
+        background-color: #eee; }
+    }
+    .table-drop {
+      padding: 3rem 1.5rem; }
+    h4 {
+      font-family: "LatoWeb";
+      font-size: 1.375em; }
+    span {
+      color: #c70923; }
+    ul {
+      margin-top: 1rem; }
+    li {
+      position: relative;
+      padding-left: 1.75rem;
+      padding-bottom: .75rem;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: .7375em;
+        left: 0;
+        width: .4em;
+        height: .4em;
+        background-color: #c70923;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; }
+    }
+  }
+  .title {
+    text-align: left;
+    //padding-left: 1.7rem;
+    p {
+      font-family: "LatoWebLight";
+      a {
+        font-size: 1.375em;
+        color: #c70923; }
+    }
+  }
+  table {
+    table-layout: fixed;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 2.25rem;
+    border: 1px solid #c1bfbf;
+    text-align: center;
+    td, & th {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: .5rem 1.5rem;
+      vertical-align: middle;
+      border: 1px solid #c1bfbf;
+      width: 20%;
+      max-width: 20%; }
+    td:nth-child(n + 3), & th:nth-child(n + 3) {
+      color: #c70923; }
+    tr:last-child th {
+      color: #c70923; }
+  }
+  .tels p {
+    margin-top: 0;
+    //padding-left: 2.75rem;
+    // background: transparent url("../img/footer-icon-phone.svg") left center no-repeat;
+    background-size: auto 3.25rem;
+    &:last-child {
+      //background: transparent url("../img/icon-mobile.svg") left center no-repeat;
+      background-size: auto 2.5rem; }
+  }
+  .arguments {
+    padding: 1rem 3.5%;
+
+    ul li {
+      float: none;
+      width: 100%;
+      img {
+        width: 10%;
+      }
+    }
+  }
+}
