@@ -1,0 +1,12 @@
+.bx-wrapper .bx-viewport {
+	min-height: 400px;
+
+}
+
+.side-floater .icon:hover span{
+	-ms-transform: tanslateX(0);
+	transition: right 0.2s ease-out 0.5s;
+}
+
+.galleries .media {
+	position: static !important;}

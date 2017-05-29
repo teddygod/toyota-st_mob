@@ -9,11 +9,12 @@
     clear: both; }
   }
   .col {
-    width: 45.71429%;
-    float: left;
-  &:last-of-type {
-    margin-left: 8.57143%; }
+    width: 93%;
+    margin: 1rem auto;
+  //&:last-of-type {
+  //  margin-left: 8.57143%; }
   }
+
   .sub-title {
     position: relative;
     font-family: "LatoWebLight";
@@ -24,36 +25,45 @@
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      @media screen and (max-width: 668px){
+        width: 18px;
+      }
+    }
     p {
-      padding-left: 40px; }
+      padding-left: 40px;
+      @media screen and (max-width: 668px){
+        padding-left: 25px;
+      }
+    }
   }
   .sub-col {
     float: left;
     width: 50%;
-    padding-top: 2.5rem;
-    padding-right: 2rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
     &:last-of-type {
       width: 100%; }
   }
   .text p, & .text address {
-    margin-top: 2.25rem;
+    margin-top: 1.25rem;
     font-family: "LatoWebLight"; }
   .input-outer {
-    width: 48.4375%;
+    width: 48%;
     float: left;
     margin-top: 2.85714%;
     &:nth-of-type(even) {
-      margin-left: 2.85714%; }
-    &:last-of-type {
-      width: 100%;
-      float: left; }
+      margin-left: 4%; }
+    //&:last-of-type {
+    //  width: 100%;
+    //  float: left; }
     input, & textarea {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       width: 100%;
+      border: solid 1px #888;
       padding: .5em 1.25em; }
     input::-webkit-input-placeholder, & textarea::-webkit-input-placeholder {
       font-family: "LatoWebLight";
@@ -71,12 +81,15 @@
       color: #000; }
     textarea {
       min-height: 7.5em; }
+    &.lastoftype {
+      width: 100%;
+      float: left; }
   }
   select {
     display: none; }
   .select-container {
     position: relative;
-    border: 1px solid #989898;
+    border: 0px solid #989898;
     ul {
       position: absolute;
       left: -1px;
@@ -100,12 +113,16 @@
     span, & li {
       padding: .5em 1.25em;
       font-family: "LatoWebLight";
-      cursor: default; }
+      cursor: default;
+      @media screen and (max-width: 668px){
+        padding: .4em 1.25em;
+      }
+    }
     .curr-opt {
       color: #c70923; }
     .fa {
       position: absolute;
-      top: 15px;
+      top: 15%;
       right: 1rem;
       color: #989898;
       cursor: pointer;
@@ -117,9 +134,15 @@
         transform: rotate(180deg); }
     }
   }
-  button {
-    width: 75%;
+  .form-send__button {
     float: left;
+    width: 100%;
+  }
+  button {
+    display: block;
+    width: 75%;
+    //float: left;
+    margin: 1rem auto;
     padding-top: 3.125%;
     padding-bottom: 3.125%;
     font-family: "LatoWeb";
@@ -131,6 +154,7 @@
     color: #c70923;
     background-color: #fff; }
   }
+
 }
 .map {
   min-height: 440px; }

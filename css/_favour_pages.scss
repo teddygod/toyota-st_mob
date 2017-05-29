@@ -1,0 +1,198 @@
+/* === Favour page === */
+.favour {
+  select {
+	display: none; }
+  .book-form {
+	background: transparent url("../img/favours-bg.jpg") center no-repeat;
+	text-align: right;
+	background-size: cover;
+	padding: 2rem 0;
+	.text p {
+	  margin-top: 4.16667%;
+	  font-family: "LatoWebLight";
+	  font-size: 12px;
+	  line-height: 1.8; }
+  }
+  .form-outer {
+	width: 93%;
+	display: block;
+	margin: 2rem auto;
+	padding: 2.85714%;
+	text-align: initial;
+	background-color: rgba(255, 255, 255, 0.9); }
+  .input-outer {
+	 width: 100%;
+	 margin-top: 4.16667%;
+	input, & textarea {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 100%;
+	  padding: .5em .8em;
+	  background: transparent;
+	  border: 1px solid #989898; }
+	input::-webkit-input-placeholder, & textarea::-webkit-input-placeholder {
+	  font-family: "LatoWebLight";
+	  color: #000; }
+	input:-moz-placeholder, & textarea:-moz-placeholder {
+	  /* Firefox 18- */
+	  font-family: "LatoWebLight";
+	  color: #000; }
+	input::-moz-placeholder, & textarea::-moz-placeholder {
+	  /* Firefox 19+ */
+	  font-family: "LatoWebLight";
+	  color: #000; }
+	input:-ms-input-placeholder, & textarea:-ms-input-placeholder {
+	  font-family: "LatoWebLight";
+	  color: #000; }
+	textarea {
+	  min-height: 7.5em; }
+  }
+  button {
+	&.btn {
+	  width: 100%;
+	  margin-top: 4.16667%;
+	  padding-top: 3.125%;
+	  padding-bottom: 3.125%;
+	  font-family: "LatoWeb";
+	  border: none;
+	  border: 1px solid #c70923;
+	  -webkit-transition: all .3s;
+	  transition: all .3s;
+	&:hover {
+	  color: #c70923;
+	  background-color: #fff; }
+	}
+  }
+  .section-content {
+	padding-bottom: 1rem;
+	text-align: center;
+  width: 93%;
+  margin: 0 auto;}
+  .slider {
+	position: relative;
+	margin-top: 2.25rem;
+	overflow-x: hidden;
+	&img {
+	  display: block;
+	  width: 100%; }
+	.bx-wrapper .bx-pager {
+	  bottom: auto;
+	  top: 100%; }
+  }
+}
+
+.select-container {
+  position: relative;
+  border: 1px solid #989898;
+  ul {
+	position: absolute;
+	left: -1px;
+	top: calc(100% + 4px);
+	width: calc(100% + 0px);
+	background-color: #fff;
+	border: 1px solid #989898;
+	z-index: 2;
+	display: none; }
+  span {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	cursor: pointer; }
+  li:hover {
+	color: #c70923; }
+  span, & li {
+	padding: .5em .8em;
+	font-family: "LatoWebLight";
+	cursor: default; }
+  .curr-opt {
+	color: #c70923; }
+  .fa {
+	position: absolute;
+	top: 1px;
+	right: 1rem;
+	color: #989898;
+	font-size: 2rem;
+	transition: transform .3s;
+  &.rotated {
+	transform: rotate(180deg); }
+  }
+  a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0; }
+}
+.controls {
+  .prev {
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-top: -25px;
+	background-color: rgba(255, 255, 255, 0.35);
+	overflow: hidden;
+	transition: all .3s;
+	&:before {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  top: 25px;
+	  left: 20px;
+	  transform: translate(-50%, -50%) rotate(-45deg);
+	  width: 14px;
+	  height: 14px;
+	  background-color: rgba(255, 255, 255, 0);
+	  box-shadow: 1px 1px #c70923;
+	  transition: all .3s; }
+	&:hover {
+	  background-color: rgba(199, 9, 35, 0.35);
+	  &:before {
+		box-shadow: 1px 1px #fff; }
+	}
+  }
+  .next {
+	 position: absolute;
+	 top: 50%;
+	 display: inline-block;
+	 width: 50px;
+	 height: 50px;
+	 margin-top: -25px;
+	 background-color: rgba(255, 255, 255, 0.35);
+	 overflow: hidden;
+	 transition: all .3s;
+	 &:before {
+	   content: '';
+	   display: block;
+	   position: absolute;
+	   top: 25px;
+	   left: 20px;
+	   transform: translate(-50%, -50%) rotate(-45deg);
+	   width: 14px;
+	   height: 14px;
+	   background-color: rgba(255, 255, 255, 0);
+	   box-shadow: 1px 1px #c70923;
+	   transition: all .3s; }
+	 &:hover {
+	   background-color: rgba(199, 9, 35, 0.35);
+	   &:before {
+		 box-shadow: 1px 1px #fff; }
+	 }
+   }
+  prev {
+	left: 0;
+
+  &:before {
+	left: 30px;
+	transform: translate(-50%, -50%) rotate(135deg); }
+  }
+  .next {
+	right: 0; }
+
+}
+

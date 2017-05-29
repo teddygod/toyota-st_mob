@@ -32,6 +32,7 @@
                 ,200
             );
         });
+
         function arrowHeight () {
             $('#specifications__slider > .specifications__slider-btn-next').css({
                 height: $('#specifications__slider').find('.bx-viewport').height()+'px'
@@ -41,6 +42,9 @@
             });
         }
         $(window).bind("resize", function(ev) {
+            arrowHeight();
+        });
+        $(window).bind("load", function(ev) {
             arrowHeight();
         });
     }

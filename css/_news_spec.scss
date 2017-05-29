@@ -42,10 +42,14 @@
   .btn {
     position: relative;
     margin-top: 2.85714%;
-    height: 50px;
-    padding-top: 0;
-    padding-bottom: 0;
+    //height: 68px;
+   // padding-top: 0;
+   // padding-bottom: 0;
     border: 1px solid #c70923;
+    padding: .3em .8em;
+    @media all and (max-width: 768px){
+     // height: 40px;
+    }
   &:hover {
     color: #c70923; }
   span {
@@ -65,22 +69,35 @@
     width: 93%;
     margin: 0 auto;
     .row {
-      width: 100%; }
+      width: 100%;
+      margin-left: 0.6%; }
     .col {
       border-bottom: none;
+      width: 99%;
+      margin-bottom: 2rem;
       a {
         color: #000; }
     }
     .content {
-      padding-right: 0;
-      padding-left: 0;
+      padding:5.61818% 0;
       border-right: none;
       border-left: none; }
-    .text p {
-      margin-top: .5rem; }
+    .text {
+      height: calc(2em * 1.6625);
+      p {
+        margin-top: .5rem;
+        &:after {
+          width: 80px;
+          top: calc(1em * 2.1625);
+        }
+      }
+    }
+    .tab-titles li h2 {
+      padding: 0 0.675rem;
+      padding-bottom: .0375rem;
+    }
   }
 }
-
 .pagination {
   position: relative;
   display: inline-block;
@@ -112,25 +129,39 @@
 
 /* === News/Specials single page === */
 .news-single {
-  margin-bottom: 3rem;
-  padding-top: 4rem;
-  padding-bottom: 5.5rem; }
-.news-single .date {
-  padding-top: 1.5rem;
-  font-family: "LatoWebLight"; }
-.news-single .img-outer {
-  margin: 2rem 0 2.5rem; }
-.news-single .table {
-  padding-top: 2rem; }
-.news-single .table table {
-  width: 100%;
-  font-family: "LatoWebLight";
-  text-align: center; }
-.news-single .table table tr:first-child {
-  font-family: "LatoWeb";
-  background-color: #eee; }
-.news-single .table td, .news-single .table th {
-  width: 33.33333333%;
-  padding: .5rem;
-  vertical-align: middle;
-  border: 1px solid #c2c0c0; }
+  padding-top: 2rem;
+  padding-bottom: .9rem;
+  width: 93%;
+  margin: 1.5rem auto;
+  .date {
+    padding-top: 1.5rem;
+    font-family: "LatoWebLight"; }
+  .img-outer {
+    margin: 2rem 0 2.5rem; }
+  .table {
+    padding-top: 2rem;
+    table {
+      width: 100%;
+      font-family: "LatoWebLight";
+      text-align: center;
+      tr:first-child {
+        font-family: "LatoWeb";
+        background-color: #eee; }
+      td, & th {
+        width: 33.33333333%;
+        padding: .5rem;
+        vertical-align: middle;
+        border: 1px solid #c2c0c0; }
+    }
+  }
+  .wrap {
+    width: 100%;
+    max-width: 93%;
+    margin: 0 auto;
+  }
+  .text p {
+    margin-top: 2.25rem;
+  }
+}
+
+

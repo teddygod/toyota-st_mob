@@ -1,6 +1,6 @@
 .about {
   .title {
-    text-align: center; }
+    text-align: left; }
   .address {
     margin-top: 2.25rem;
     font-family: "LatoWeb";
@@ -11,7 +11,7 @@
       display: inline-block; }
   }
   .row {
-    max-width: 100%;
+    max-width: 93%;
     margin-left: auto;
     margin-right: auto;
   &:after {
@@ -20,12 +20,14 @@
     clear: both; }
   }
   .col {
-    width: 50%;
-    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   &:first-of-type {
-    padding-right: 5.71429%; }
+    /*padding-right: 5.71429%;*/ }
   &:last-of-type {
-    padding-left: 5.71429%; }
+    /*padding-left: 5.71429%;*/ }
   }
   ul {
     margin-top: 6px; }
@@ -35,13 +37,21 @@
     margin-top: 2rem; }
   img {
     display: block;
-    max-width: 100%; }
+    width: 100%;
+  }
 }
 .arguments {
   position: relative;
   padding: 1rem 0;
   background: transparent url("../img/about-bg.jpg") center no-repeat;
   background-size: cover;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+  }
   .bg-shadow {
     position: absolute;
     top: 0;
@@ -58,6 +68,7 @@
     a {
       color: #c70923; }
   }
+  ul {margin-bottom: 1rem;}
   li {
     position: relative;
     min-height: 4.6875em; }
@@ -65,13 +76,17 @@
     position: absolute;
     top: 50%;
     left: 0;
+    max-width: 25%;
+    width: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%); }
   .col > ul > li > p {
-    padding-left: 11%;
+    padding-left: 30%;
     padding-right: 0;
-    position: absolute;
+    position: absolute;max-width: 90%;
+
+    font-size: 0.7273rem;
     top: 50%;
     left: 0;
     -webkit-transform: translateY(-50%);
@@ -86,7 +101,8 @@
 }
 
 .section-content {
-  padding-bottom: 1.75rem; }
+  padding-bottom: 1.75rem;
+  margin-top: 1rem;}
 .service {
   .section-content .col:last-child{
     width: 93%;
@@ -110,4 +126,4 @@
 }
 .img-outer img {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;}
