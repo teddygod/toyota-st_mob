@@ -107,6 +107,7 @@
       width: 100%;
       position: relative;
       z-index: 1;
+      border: solid 1px #888;
       cursor: pointer; }
     li:hover {
       color: #c70923; }
@@ -154,7 +155,13 @@
     color: #c70923;
     background-color: #fff; }
   }
-
+  .consultants {
+    width: 93%;
+    margin: 0 auto;
+    .categ-list {
+      margin: 1.5rem 0;
+    }
+  }
 }
 .map {
   min-height: 440px; }

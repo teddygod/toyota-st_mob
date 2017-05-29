@@ -846,12 +846,18 @@
   &:after {
   content: '';
   display: block;
-  padding-bottom: 8.75rem; }
+  padding-bottom: 2.75rem; }
+  .wrap {
+    width: 93%;
+    margin: 0 auto;
+  }
   .feature {
     margin: 2.25rem 0;
     font-size: 0;
+    display: flex;
+    flex-direction: column;
     .col {
-      width: 32.14286%;
+      width: 100%;
       float: left;
       margin-left: 1.78571%;
       padding-left: 2.85714%;
@@ -864,7 +870,9 @@
     }
     img {
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      float: left;
+      width: 11%;}
     &-title {
       margin: 1rem 0;
       font-family: "LatoWeb";
@@ -880,6 +888,24 @@
     overflow-x: hidden;
     ul {margin-top: 0; }
     li {margin-top: 0; }
+  }
+  .contact-info {
+    padding-top: .75rem;
+    padding-bottom: .5em;
+    .row .col {
+      width: 46%;
+      margin-left: 1.85714%;
+      &:last-child {
+        width: 94%;
+        margin-top: 2.85714%;
+      }
+    }
+    .block {
+      margin-bottom: .21rem;
+    }
+    .btn {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -1237,13 +1263,13 @@
     width: 100%; }
   }
   .categ-list {
-    margin: .05rem 0;
+    margin: 1rem 0;
     li {
       display: inline-block;
       font-family: "LatoWeb";
       float: none;
       width: inherit;
-      margin-top: 0.5rem; }
+      margin-top: 1rem; }
     input[type="radio"] {
       display: none; }
     input[type="radio"]:checked + label {
@@ -1283,13 +1309,30 @@
     .tels {
       p {
         margin-top: .5rem;
-        padding-left: 30px; }
+        padding-left: 30px;
+        @media screen and (max-width: 640px){
+          padding-left: 20px;
+        }
+
+      }
       .tel {
-        background: transparent url("../img/footer-icon-phone.svg") left center no-repeat; }
+        background: transparent url("../img/footer-icon-phone.svg") left center no-repeat;
+        @media screen and (max-width: 668px){
+          background-size: 10%;
+        }
+      }
       .fax {
-        background: transparent url("../img/icon-fax.svg") left center no-repeat; }
+        background: transparent url("../img/icon-fax.svg") left center no-repeat;
+        @media screen and (max-width: 668px){
+          background-size:10%;
+        }
+      }
       .mob {
-        background: transparent url("../img/icon-mobile.svg") 0.75% center no-repeat; }
+        background: transparent url("../img/icon-mobile.svg") 0.75% center no-repeat;
+        @media screen and (max-width: 668px){
+          background-size: 4%;
+        }
+      }
 
     }
     .btn {

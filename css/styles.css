@@ -2983,13 +2983,23 @@ form img {
 .body-repair:after {
   content: '';
   display: block;
-  padding-bottom: 8.75rem; }
+  padding-bottom: 2.75rem; }
+
+.body-repair .wrap {
+  width: 93%;
+  margin: 0 auto; }
 
 .body-repair .feature {
   margin: 2.25rem 0;
-  font-size: 0; }
+  font-size: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .body-repair .feature .col {
-    width: 32.14286%;
+    width: 100%;
     float: left;
     margin-left: 1.78571%;
     padding-left: 2.85714%;
@@ -3001,7 +3011,9 @@ form img {
       margin-left: 0; }
   .body-repair .feature img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    float: left;
+    width: 11%; }
   .body-repair .feature-title {
     margin: 1rem 0;
     font-family: "LatoWeb";
@@ -3019,6 +3031,20 @@ form img {
     margin-top: 0; }
   .body-repair .slider li {
     margin-top: 0; }
+
+.body-repair .contact-info {
+  padding-top: .75rem;
+  padding-bottom: .5em; }
+  .body-repair .contact-info .row .col {
+    width: 46%;
+    margin-left: 1.85714%; }
+    .body-repair .contact-info .row .col:last-child {
+      width: 94%;
+      margin-top: 2.85714%; }
+  .body-repair .contact-info .block {
+    margin-bottom: .21rem; }
+  .body-repair .contact-info .btn {
+    margin-top: 1rem; }
 
 /* === Corporate trade page === */
 .corporate-trade .arguments {
@@ -3364,13 +3390,13 @@ form img {
       display: inline-block;
       width: 100%; }
   .consultants .categ-list {
-    margin: .05rem 0; }
+    margin: 1rem 0; }
     .consultants .categ-list li {
       display: inline-block;
       font-family: "LatoWeb";
       float: none;
       width: inherit;
-      margin-top: 0.5rem; }
+      margin-top: 1rem; }
     .consultants .categ-list input[type="radio"] {
       display: none; }
     .consultants .categ-list input[type="radio"]:checked + label {
@@ -3412,12 +3438,24 @@ form img {
   .consultants-list .tels p {
     margin-top: .5rem;
     padding-left: 30px; }
+    @media screen and (max-width: 640px) {
+      .consultants-list .tels p {
+        padding-left: 20px; } }
   .consultants-list .tels .tel {
     background: transparent url("../img/footer-icon-phone.svg") left center no-repeat; }
+    @media screen and (max-width: 668px) {
+      .consultants-list .tels .tel {
+        background-size: 10%; } }
   .consultants-list .tels .fax {
     background: transparent url("../img/icon-fax.svg") left center no-repeat; }
+    @media screen and (max-width: 668px) {
+      .consultants-list .tels .fax {
+        background-size: 10%; } }
   .consultants-list .tels .mob {
     background: transparent url("../img/icon-mobile.svg") 0.75% center no-repeat; }
+    @media screen and (max-width: 668px) {
+      .consultants-list .tels .mob {
+        background-size: 4%; } }
   .consultants-list .btn {
     padding: 12px 30px; }
 
@@ -3815,6 +3853,7 @@ form img {
     width: 100%;
     position: relative;
     z-index: 1;
+    border: solid 1px #888;
     cursor: pointer; }
   .contacts .select-container li:hover {
     color: #c70923; }
@@ -3859,6 +3898,12 @@ form img {
   .contacts button:hover {
     color: #c70923;
     background-color: #fff; }
+
+.contacts .consultants {
+  width: 93%;
+  margin: 0 auto; }
+  .contacts .consultants .categ-list {
+    margin: 1.5rem 0; }
 
 .map {
   min-height: 440px; }
@@ -4052,7 +4097,7 @@ form img {
   .select-container li:hover {
     color: #c70923; }
   .select-container span, .select-container li {
-    padding: .5em .8em;
+    padding: .6em .8em .5em;
     font-family: "LatoWebLight";
     cursor: default; }
   .select-container .curr-opt {
@@ -4077,6 +4122,14 @@ form img {
     top: 0;
     left: 0;
     opacity: 0; }
+
+.controls a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0; }
 
 .controls .prev {
   position: absolute;
@@ -4136,9 +4189,9 @@ form img {
     .controls .next:hover:before {
       box-shadow: 1px 1px #fff; }
 
-.controls prev {
+.controls .prev {
   left: 0; }
-  .controls prev:before {
+  .controls .prev:before {
     left: 30px;
     -webkit-transform: translate(-50%, -50%) rotate(135deg);
     -ms-transform: translate(-50%, -50%) rotate(135deg);
