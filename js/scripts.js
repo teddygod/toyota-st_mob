@@ -156,7 +156,7 @@ $(document).ready(function(){
 
 
 
-    var $gal_trigger=$('.gallery-trigger'),
+    /*var $gal_trigger=$('.gallery-trigger'),
         $gal_close=$('.gallery-close'),
         $pop_mask=$('.background-mask'),
         $gallery;
@@ -187,7 +187,7 @@ $(document).ready(function(){
         $gallery.fadeOut(500);
         $gal_close.fadeOut(500);
         $pop_mask.fadeOut(500);
-    });
+    });*/
 
 
 });

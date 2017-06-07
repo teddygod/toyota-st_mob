@@ -647,37 +647,37 @@ $(document).ready(function(){
 
 	// Specifications slide Pseudo tables left-/right
 	var isAnimating = false;
-  /*$('.table-slider').on('click', function (e) {
-   var $table = $('.table-drop .content'); // move all tables on page Cars
-   // var $table = $(this).siblings('.outer').find('.content'); // move only this table
+	/*$('.table-slider').on('click', function (e) {
+	 var $table = $('.table-drop .content'); // move all tables on page Cars
+	 // var $table = $(this).siblings('.outer').find('.content'); // move only this table
 
-   $table.each(function () {
-   var margin = parseInt($table.css('margin-left')),
-   fixedColWidth = $(this).closest('.table-drop').is('.no-fixed') ? 0 : 200;
-   //  console.log($(this).closest('.table-drop').is('.no-fixed'));
-   //  console.log(fixedColWidth);
-   minMargin = $table.parent().width() - $table.width() - fixedColWidth;
-   // console.log(minMargin);
-   // console.log(margin);
-   if( $(e.target).hasClass('slide-right') && !isAnimating && margin >= minMargin ){
-   isAnimating = true;
-   $table.animate({
-   marginLeft: '-=150px'
-   }, 300, function() {
-   isAnimating = false;
-   });
-   }
-   if( $(e.target).hasClass('slide-left') && !isAnimating && $table.css('margin-left') != '0px' ){
-   isAnimating = true;
-   $table.animate({
-   marginLeft: '+=150px'
-   }, 300, function() {
-   isAnimating = false;
-   });
-   }
-   })
+	 $table.each(function () {
+	 var margin = parseInt($table.css('margin-left')),
+	 fixedColWidth = $(this).closest('.table-drop').is('.no-fixed') ? 0 : 200;
+	 //  console.log($(this).closest('.table-drop').is('.no-fixed'));
+	 //  console.log(fixedColWidth);
+	 minMargin = $table.parent().width() - $table.width() - fixedColWidth;
+	 // console.log(minMargin);
+	 // console.log(margin);
+	 if( $(e.target).hasClass('slide-right') && !isAnimating && margin >= minMargin ){
+	 isAnimating = true;
+	 $table.animate({
+	 marginLeft: '-=150px'
+	 }, 300, function() {
+	 isAnimating = false;
+	 });
+	 }
+	 if( $(e.target).hasClass('slide-left') && !isAnimating && $table.css('margin-left') != '0px' ){
+	 isAnimating = true;
+	 $table.animate({
+	 marginLeft: '+=150px'
+	 }, 300, function() {
+	 isAnimating = false;
+	 });
+	 }
+	 })
 
-   });*/
+	 });*/
 
 	$('.table-slider').on('click', function (e) {
 		var $table = $('.table-drop .content'); // move all tables on page Cars
@@ -1023,45 +1023,45 @@ $(document).ready(function(){
 	// On services page
 	$('#signupToService').on('click', function(){toggleModal('signForService');return false;});
 	// On news, specials pages
-  /*$('.btn-subscribe').on('click', function(){
-   if($(this).closest('form').find('input[nameh=name]').val() == ''){
-   $(this).closest('form').find('input[nameh=name]').addClass('error');
-   return false;
-   } else {
-   $(this).closest('form').find('input[nameh=name]').removeClass('error');
-   }
-   if(!validateEmail($(this).closest('form').find('input[nameh=email]').val())){
-   $(this).closest('form').find('input[nameh=email]').addClass('error');
-   return false;
-   } else {
-   $(this).closest('form').find('input[nameh=email]').removeClass('error');
-   }
-   toggleModal('subscribed');
-   return false;
-   });*/
+	/*$('.btn-subscribe').on('click', function(){
+	 if($(this).closest('form').find('input[nameh=name]').val() == ''){
+	 $(this).closest('form').find('input[nameh=name]').addClass('error');
+	 return false;
+	 } else {
+	 $(this).closest('form').find('input[nameh=name]').removeClass('error');
+	 }
+	 if(!validateEmail($(this).closest('form').find('input[nameh=email]').val())){
+	 $(this).closest('form').find('input[nameh=email]').addClass('error');
+	 return false;
+	 } else {
+	 $(this).closest('form').find('input[nameh=email]').removeClass('error');
+	 }
+	 toggleModal('subscribed');
+	 return false;
+	 });*/
 	// On buy-car, test-drive pages
-  /*$('form#buy_car, form#test_drive').on('submit', function(){
-   if($(this).closest('form').find('input[name=name]').val() == ''){
-   $(this).closest('form').find('input[name=name]').addClass('error');
-   return false;
-   } else {
-   $(this).closest('form').find('input[name=name]').removeClass('error');
-   }
-   if($(this).closest('form').find('input[name=tel]').val() == ''){
-   $(this).closest('form').find('input[name=tel]').addClass('error');
-   return false;
-   } else {
-   $(this).closest('form').find('input[name=tel]').removeClass('error');
-   }
-   if(!validateEmail($(this).closest('form').find('input[name=email]').val())){
-   $(this).closest('form').find('input[name=email]').addClass('error');
-   return false;
-   } else {
-   $(this).closest('form').find('input[name=email]').removeClass('error');
-   }
-   toggleModal('waitResponse');
-   return false;
-   });*/
+	/*$('form#buy_car, form#test_drive').on('submit', function(){
+	 if($(this).closest('form').find('input[name=name]').val() == ''){
+	 $(this).closest('form').find('input[name=name]').addClass('error');
+	 return false;
+	 } else {
+	 $(this).closest('form').find('input[name=name]').removeClass('error');
+	 }
+	 if($(this).closest('form').find('input[name=tel]').val() == ''){
+	 $(this).closest('form').find('input[name=tel]').addClass('error');
+	 return false;
+	 } else {
+	 $(this).closest('form').find('input[name=tel]').removeClass('error');
+	 }
+	 if(!validateEmail($(this).closest('form').find('input[name=email]').val())){
+	 $(this).closest('form').find('input[name=email]').addClass('error');
+	 return false;
+	 } else {
+	 $(this).closest('form').find('input[name=email]').removeClass('error');
+	 }
+	 toggleModal('waitResponse');
+	 return false;
+	 });*/
 
 	// On body-repair, body-repair-light, vacancies page
 	$('.consultants-list').on('click','.write-letter', function(){
@@ -1091,11 +1091,11 @@ $(document).ready(function(){
 		return false;
 	});
 
-  /*$('#writeToConsultant #sendMsg').on('click', function(){
-   toggleModal('writeToConsultant');
-   toggleModal('waitResponse2');
-   return false;
-   });*/
+	/*$('#writeToConsultant #sendMsg').on('click', function(){
+	 toggleModal('writeToConsultant');
+	 toggleModal('waitResponse2');
+	 return false;
+	 });*/
 
 	// Close modal on click outside
 	$('.popup').on('click', function(){toggleModal($(this).attr('id'));body.removeClass('body-locked');return false;});
@@ -1108,16 +1108,16 @@ $(document).ready(function(){
 	});
 
 
-  /* $('#replyVacancy #sendMsg').on('click', function(){
-   toggleModal('replyVacancy');
-   return false;
-   });
+	/* $('#replyVacancy #sendMsg').on('click', function(){
+	 toggleModal('replyVacancy');
+	 return false;
+	 });
 
-   $('#writeToCenter #sendMsg').on('click', function(){
-   toggleModal('writeToCenter');
-   toggleModal('waitResponse');
-   return false;
-   });*/
+	 $('#writeToCenter #sendMsg').on('click', function(){
+	 toggleModal('writeToCenter');
+	 toggleModal('waitResponse');
+	 return false;
+	 });*/
 
 	// Close modal
 	$('.close').click(function () {
@@ -1154,9 +1154,9 @@ $(document).ready(function(){
 			};
 			return false;
 		}
-      /*if(!checkTypeAllowed(fileType[fileType.length-1], allowedTypes)){
-       $('.file-info').append('<span class="fontB">ÐÐµÐ²Ñ–Ñ€Ð½Ð¸Ð¹ Ñ‚Ð¸Ð¿ Ñ„Ð°Ð¹Ð»Ñƒ!</span>')
-       };*/
+		/*if(!checkTypeAllowed(fileType[fileType.length-1], allowedTypes)){
+		 $('.file-info').append('<span class="fontB">Невірний тип файлу!</span>')
+		 };*/
 
 
 	});

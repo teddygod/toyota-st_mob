@@ -121,7 +121,7 @@ a {
   }
 }
 
-.clearfix:after {
+.clearfixe:after {
   content: '';
   display: table;
   clear: both; }
@@ -303,36 +303,42 @@ a {
   display: block;
   position: absolute;
  // width: 221px;
-  max-width: 335px;
+  max-width: 410px;
   background: #c70923;
-  top: 60px;
-  padding-right: 59px;
-  padding-left: 38px;
-  padding-bottom: 3px;
+  top: 70px;
+  padding-right: 101px;
+  padding-left: 27px;
+  padding-top: 12px;
+  right: 0;
   z-index: 99;
   transition: display .3s ease, transform .3s .1s ease;//delay the formation of the x till the minus is formed
   @media all and (max-width : 768px) {
-    max-width: 227px;
     top: 40px;
+    padding-right: 82px;
   }
   @media all and (max-width : 668px) {
-    max-width: 177px;
-    top: 35px;
-    padding-right: 51px;
+    top: 32px;
+    padding-right: 76px;
     padding-left: 20px;
   }
   @media all and (max-width : 580px) {
 
   }
   @media all and (max-width : 460px) {
-    max-width: 107px;
     top: 29px;
-    padding-right: 23px;
+    padding-right: 34px;
     padding-left: 13px;
+    padding-top: 5px;
+  }
+  .phone-number a {
+    padding: 0.8rem 0;
+    display: block;
+    @media all and (max-width : 768px) {
+      padding: .8rem 0;
+    }
   }
 
 }
-
 
 
 .logo{
@@ -1866,6 +1872,10 @@ form img {
     width: 18%;
   }
 }
+
+/* === BX-Slider === */
+@import "bx-slider";
+
 /* === About page === */
 @import "about_page";
 
@@ -1892,9 +1902,6 @@ form img {
 
 /* === Popups module === */
 @import "popups";
-
-/* === BX-Slider === */
-@import "bx-slider";
 
 //-------------------------------------------
 //media-start

@@ -91,5 +91,15 @@
         width: 10%;
       }
     }
+    .col > ul > li > p {
+      padding-left: 14%;
+      padding-right: 0;
+      position: absolute;
+      max-width: 90%;
+      font-size: 0.7273rem;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
   }
 }

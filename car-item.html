@@ -293,7 +293,7 @@
         <!-- Galleries -->
         <section class="galleries" id="galleries">
            <!-- <h2 class="title under-lined under-centered fontE">Галерея</h2>-->
-            <div class="row clearfix">
+            <div class="row clearfixe">
                 <div class="media">
                     <div class="block" data-media="exterior">
                         <!-- slider -->
@@ -524,23 +524,25 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>-->
 <!-- bxSlider Javascript file -->
-<!--<script src="./js/jquery-2.1.4.min.js"></script>-->
+<script src="./js/jquery-2.2.3.js"></script>
 <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCmYXYTu04_WIG7GdlD_8_StfbhBJbfS0I"></script>-->
 <script src="./js/jquery.bxslider.min.js"></script>
-<script src="./js/jquery.nicescroll.min.js"></script>
+<!--<script src="./js/jquery.nicescroll.min.js"></script>-->
 <!--<script src="./js/jquery-ui.min.js"></script>-->
 <!--<script src="./js/jquery.ui.touch-punch.min.js"></script>-->
 <!--<script src="./js/swiper.jquery.min.js"></script>-->
 <script src="./js/modal-popup.js"></script>
 <script src="./js/other_slides.js"></script>
+<script src="./js/th360.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/script.js"></script>
+<script src="./js/videos.js"></script>
 
 <script src="https://labnol.googlecode.com/files/youtube.js"></script>
-<script>
+<!--<script>
     $(document).ready(function(){
         //Resizer for video
         $(function() {
@@ -564,14 +566,14 @@
             }).resize();
         })
     })
-</script>
+</script>-->
 
 
 
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.css">
-<script src="js/threesixty.min.js"></script>
+<!--<script src="js/threesixty.min.js"></script>-->
 <style>
     .car-spinner {
         position: relative;
@@ -696,7 +698,44 @@
             currentFrame: 1, // This the start frame for auto spin
             imgList: '.images_360', // selector for image list
             progress: '.spinner', // selector to show the loading progress
-            imagePath:'./img/spinner360/Auris/', // path of the image assets
+			/*imgArray : [
+				"img/spinner360/Auris/1.png",
+                "img/spinner360/Auris/2.png",
+                "img/spinner360/Auris/3.png",
+                "img/spinner360/Auris/4.png",
+                "img/spinner360/Auris/5.png",
+                "img/spinner360/Auris/6.png",
+                "img/spinner360/Auris/7.png",
+                "img/spinner360/Auris/8.png",
+                "img/spinner360/Auris/9.png",
+                "img/spinner360/Auris/10.png",
+                "img/spinner360/Auris/11.png",
+                "img/spinner360/Auris/12.png",
+                "img/spinner360/Auris/13.png",
+                "img/spinner360/Auris/14.png",
+                "img/spinner360/Auris/15.png",
+                "img/spinner360/Auris/16.png",
+                "img/spinner360/Auris/17.png",
+                "img/spinner360/Auris/18.png",
+                "img/spinner360/Auris/19.png",
+                "img/spinner360/Auris/20.png",
+                "img/spinner360/Auris/21.png",
+                "img/spinner360/Auris/22.png",
+                "img/spinner360/Auris/23.png",
+                "img/spinner360/Auris/24.png",
+                "img/spinner360/Auris/25.png",
+                "img/spinner360/Auris/26.png",
+                "img/spinner360/Auris/27.png",
+                "img/spinner360/Auris/28.png",
+                "img/spinner360/Auris/29.png",
+                "img/spinner360/Auris/30.png",
+                "img/spinner360/Auris/31.png",
+                "img/spinner360/Auris/32.png",
+                "img/spinner360/Auris/33.png",
+                "img/spinner360/Auris/34.png",
+                "img/spinner360/Auris/35.png",
+                "img/spinner360/Auris/36.png",],*/
+            imagePath:'img/spinner360/Auris/', // path of the image assets
             filePrefix: '', // file prefix if any
             ext: '.png', // extention for the assets
             height: 449,
